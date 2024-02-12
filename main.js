@@ -16,6 +16,7 @@ let resetButton = document.getElementById("reset-button");
 let chanceNumber = document.getElementById("chance-number");
 let chance = 5;
 let history = [];
+let click = 0;
 
 
 checkButton.addEventListener("click", play);
@@ -26,6 +27,8 @@ pickRandomNum();
 
 
 function pickRandomNum(){
+    document.getElementById('result').innerText = '';
+
     randomNum = Math.floor(Math.random() * 100) + 1;
     inputNumber.value = "";
     console.log("현재 랜덤번호는", randomNum);
@@ -36,6 +39,13 @@ function pickRandomNum(){
 }
 
 function play(){
+    if(click == 0) {
+        click = 2;
+    }
+
+    if(click >= 2) {
+
+    }
     let userValue = inputNumber.value;
 
     if(userValue>100 || userValue<1){
@@ -67,4 +77,11 @@ function play(){
         alert("기회가 끝났습니다. 다시시작!");
         pickRandomNum();
     }
+}
+
+function printName() {
+    
+    const name = document.getElementById('number-input').value;
+
+    document.getElementById('result').innerText = name;
 }

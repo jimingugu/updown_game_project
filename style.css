@@ -1,0 +1,164 @@
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 3% 3% 3%;
+    background-color: ghostwhite;
+}
+
+.titleDiv {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.titleH1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.subTitleDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.subTitleChance {
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 700;
+
+}
+
+.subTitleAlert {
+    width: 100%;
+    display: flex;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: darkcyan;
+}
+
+.resultDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+} 
+
+.resultValue {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+input {
+    width: 500px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+  }
+
+.inputDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBtnDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.custom-btn {
+    width: 48%;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+.inputBtnReset {
+    border: none;
+    background: rgb(251,33,117);
+      background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+      color: #fff;
+      overflow: hidden;
+  }
+  .inputBtnReset:hover {
+      text-decoration: none;
+      color: #fff;
+  }
+  .inputBtnReset:before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: -180px;
+      left: 0;
+      width: 30px;
+      height: 100%;
+      background-color: #fff;
+      animation: shiny-btn1 3s ease-in-out infinite;
+  }
+  .inputBtnReset:hover{
+    opacity: .7;
+  }
+  .inputBtnReset:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  }
+  
+  .inputBtnCheck {
+    background-color: #89d8d3;
+  background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+  }
+  .inputBtnCheck:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+     background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+  }
+  .inputBtnCheck:hover {
+    color: #fff;
+  }
+  .inputBtnCheck:hover:after {
+    top: 0;
+    height: 100%;
+  }
+  .binputBtnCheck:active {
+    top: 2px;
+  }
